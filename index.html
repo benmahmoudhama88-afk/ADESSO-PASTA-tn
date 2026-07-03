@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adesso Pasta | Premium Italian Food in Bardo</title>
+    
+    <!-- Pure CSS Tailwind for flawless anWriter rendering -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { background-color: #09090b; color: #f4f4f5; }
+        .bg-zinc-900 { background-color: #18181b; }
+        .border-zinc-800 { border-color: #27272a; }
+        /* Warm Amber colors synced with Screenshot_20260703-174240.jpg */
+        .text-amber-400 { color: #fbbf24; }
+        .bg-amber-500 { background-color: #f59e0b; }
+        .bg-zinc-950 { background-color: #09090b; }
+
+        /* BUTTON ANIMATION CORE */
+        .animated-btn {
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .animated-btn:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 10px 15px -3px rgba(245, 158, 11, 0.3);
+            filter: brightness(1.1);
+        }
+        .animated-btn:active {
+            transform: translateY(1px) scale(0.98);
+            box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.2);
+        }
+    </style>
+</head>
+<body class="antialiased font-sans pt-16">
+
+    <!-- 1. STICKY NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 w-full bg-black bg-opacity-95 backdrop-blur-md z-50 border-b border-zinc-800">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
+            <h1 class="font-bold text-base tracking-wider text-amber-400">ADESSO PASTA</h1>
+            <div class="flex items-center space-x-3 text-xs font-medium">
+                <a href="#menu" class="text-gray-300 hover:text-amber-400 transition-colors">Menu</a>
+                <a href="#order" class="animated-btn bg-amber-500 text-black px-3 py-1.5 rounded-full font-bold shadow-sm">Order Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO HEADER WITH GOOGLE MAPS LINK -->
+    <header class="relative py-12 px-4 text-center overflow-hidden border-b border-zinc-800">
+        <div class="relative z-10 max-w-xl mx-auto">
+            <a href="https://maps.google.com/?q=Bardo+Center+Tunis" target="_blank" class="animated-btn inline-flex items-center gap-2 text-amber-400 uppercase tracking-wider text-xs font-bold bg-amber-500/10 px-4 py-2 rounded-full border border-amber-500/20 mb-4 shadow-sm">
+                <i class="fas fa-map-marker-alt"></i> Bardo Center | <span class="underline">Open Google Maps</span>
+            </a>
+            <h2 class="text-3xl font-extrabold text-white tracking-tight">ADESSO PASTA</h2>
+            <p class="text-gray-400 text-xs mt-2 max-w-sm mx-auto">Premium Fresh Handmade Italian Pasta & Authentic Pizza Napoletana in Tunis.</p>
+        </div>
+    </header>
+
+    <!-- 3. COMPLETE MENU SECTION WITH PHOTO CONTAINERS -->
+    <section id="menu" class="py-10 px-4 max-w-xl mx-auto">
+        <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2 border-b border-zinc-800 pb-2">
+            <span>🍕</span> Our Complete Menu
+        </h3>
+        
+        <div class="space-y-4">
+            <!-- Pizza 1 -->
+            <div class="bg-zinc-900 border border-zinc-800 p-4 rounded-xl flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between shadow-md">
+                <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=120&h=120&q=80" alt="Casa Formaggi" class="w-16 h-16 object-cover rounded-lg border border-zinc-800 bg-zinc-950 flex-shrink-0">
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Casa Formaggi (31 cm)</h4>
+                        <p class="text-gray-400 text-[11px] mt-0.5 font-light">Sauce tomate maison, mozzarella, roquefort, Grana Padano.</p>
+                    </div>
+                </div>
+                <span class="text-amber-400 font-bold bg-amber-500/10 px-2.5 py-1 rounded text-xs self-end sm:self-center whitespace-nowrap">28.000 DT</span>
+            </div>
+
+            <!-- Pizza 2 -->
+            <div class="bg-zinc-900 border border-zinc-800 p-4 rounded-xl flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between shadow-md">
+                <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=120&h=120&q=80" alt="Campagnola" class="w-16 h-16 object-cover rounded-lg border border-zinc-800 bg-zinc-950 flex-shrink-0">
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Campagnola (31 cm)</h4>
+                        <p class="text-gray-400 text-[11px] mt-0.5 font-light">Sauce tomate maison, mozzarella, jambon fumé, champignons.</p>
+                    </div>
+                </div>
+                <span class="text-amber-400 font-bold bg-amber-500/10 px-2.5 py-1 rounded text-xs self-end sm:self-center whitespace-nowrap">25.000 DT</span>
+            </div>
+
+            <!-- Pizza 3 -->
+            <div class="bg-zinc-900 border border-zinc-800 p-4 rounded-xl flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between shadow-md">
+                <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&w=120&h=120&q=80" alt="Pizza Margherita" class="w-16 h-16 object-cover rounded-lg border border-zinc-800 bg-zinc-950 flex-shrink-0">
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Pizza Margherita (31 cm)</h4>
+                        <p class="text-gray-400 text-[11px] mt-0.5 font-light">Sauce tomate maison, mozzarella premium, basilic.</p>
+                    </div>
+                </div>
+                <span class="text-amber-400 font-bold bg-amber-500/10 px-2.5 py-1 rounded text-xs self-end sm:self-center whitespace-nowrap">18.500 DT</span>
+            </div>
+
+            <!-- Pizza 4 -->
+            <div class="bg-zinc-900 border border-zinc-800 p-4 rounded-xl flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between shadow-md">
+                <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=120&h=120&q=80" alt="Campagna Veggy" class="w-16 h-16 object-cover rounded-lg border border-zinc-800 bg-zinc-950 flex-shrink-0">
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Campagna Veggy (31 cm)</h4>
+                        <p class="text-gray-400 text-[11px] mt-0.5 font-light">Sauce tomate maison, mozzarella, légumes de saison.</p>
+                    </div>
+                </div>
+                <span class="text-amber-400 font-bold bg-amber-500/10 px-2.5 py-1 rounded text-xs self-end sm:self-center whitespace-nowrap">23.000 DT</span>
+            </div>
+
+            <!-- Pasta 1 -->
+            <div class="bg-zinc-900 border border-zinc-800 p-4 rounded-xl flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between shadow-md">
+                <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=120&h=120&q=80" alt="Spaghetti Fruits de Mer" class="w-16 h-16 object-cover rounded-lg border border-zinc-800 bg-zinc-950 flex-shrink-0">
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Spaghetti Fruits de Mer</h4>
+                        <p class="text-gray-400 text-[11px] mt-0.5 font-light">Fresh local seafood tossed in rich garlic tomato sauce.</p>
+                    </div>
+                </div>
+                <span class="text-amber-400 font-bold bg-amber-500/10 px-2.5 py-1 rounded text-xs self-end sm:self-center whitespace-nowrap">24.000 DT</span>
+            </div>
+
+            <!-- Pasta 2 -->
+            <div class="bg-zinc-900 border border-zinc-800 p-4 rounded-xl flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between shadow-md">
+                <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&w=120&h=120&q=80" alt="Gnocchi Quatre Fromages" class="w-16 h-16 object-cover rounded-lg border border-zinc-800 bg-zinc-950 flex-shrink-0">
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Gnocchi Quatre Fromages</h4>
+                        <p class="text-gray-400 text-[11px] mt-0.5 font-light">Soft potato gnocchi in rich, creamy four-cheese sauce.</p>
+                    </div>
+                </div>
+                <span class="text-amber-400 font-bold bg-amber-500/10 px-2.5 py-1 rounded text-xs self-end sm:self-center whitespace-nowrap">21.000 DT</span>
+            </div>
+            
+            <!-- Individual Drinks Expanded List -->
+            <div class="bg-zinc-900 border border-zinc-800 p-4 rounded-xl shadow-md">
+                <h4 class="text-sm font-bold text-white mb-2">Boissons Disponibles (Canette 24cl)</h4>
+                <div class="grid grid-cols-2 gap-2 text-xs text-gray-400">
+                    <div class="flex justify-between border-b border-zinc-800 pb-1"><span>Boga Cidre</span><span class="text-amber-400">3.500 DT</span></div>
+                    <div class="flex justify-between border-b border-zinc-800 pb-1"><span>Coca Cola</span><span class="text-amber-400">3.500 DT</span></div>
+                    <div class="flex justify-between border-b border-zinc-800 pb-1"><span>Fanta Orange</span><span class="text-amber-400">3.500 DT</span></div>
+                    <div class="flex justify-between border-b border-zinc-800 pb-1"><span>Apla Pomme</span><span class="text-amber-400">3.500 DT</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. ORDER FORM GENERATOR WITH 1-5 STARS DROPDOWN -->
+    <section id="order" class="py-10 px-4 max-w-xl mx-auto">
+        <div class="bg-zinc-900 border border-zinc-800 p-5 rounded-2xl shadow-xl">
+            <div class="text-center mb-6">
+                <h3 class="text-xl font-bold text-white">Place Your Order</h3>
+                <p class="text-gray-400 text-xs mt-1">INSTANTLY CREATES A SMART RECEIPT FOR WHATSAPP</p>
+            </div>
+
+            <form id="whatsappForm" class="space-y-4">
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-semibold text-gray-400 mb-1">Your Name</label>
+                    <input type="text" id="customerName" required class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2.5 text-white focus:outline-none focus:border-amber-500 text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-semibold text-gray-400 mb-1">Phone Number</label>
+                    <input type="tel" id="customerPhone" required class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2.5 text-white focus:outline-none focus:border-amber-500 text-sm">
+                </div>
+
+                <div class="flex space-x-3">
+                    <div class="w-2/3">
+                        <label class="block text-xs uppercase tracking-wider font-semibold text-gray-400 mb-1">Select Item</label>
+                        <select id="pastaSelect" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2.5 text-white focus:outline-none focus:border-amber-500 text-sm" style="height: 42px;">
+                            <option value="Casa Formaggi (Pizza)">Casa Formaggi - 28.000 DT</option>
+                            <option value="Campagnola (Pizza)">Campagnola - 25.000 DT</option>
+                            <option value="Pizza Margherita">Pizza Margherita - 18.500 DT</option>
+                            <option value="Campagna Veggy (Pizza)">Campagna Veggy - 23.000 DT</option>
+                            <option value="Spaghetti Fruits de Mer">Spaghetti Fruits de Mer - 24.000 DT</option>
+                            <option value="Gnocchi Quatre Fromages">Gnocchi Quatre Fromages - 21.000 DT</option>
+                            <option value="Boga Cidre">Boga Cidre - 3.500 DT</option>
+                            <option value="Coca Cola Classique">Coca Cola Classique - 3.500 DT</option>
+                            <option value="Fanta Orange">Fanta Orange - 3.500 DT</option>
+                            <option value="Apla Pomme">Apla Pomme - 3.500 DT</option>
+                        </select>
+                    </div>
+                    <div class="w-1/3">
+                        <label class="block text-xs uppercase tracking-wider font-semibold text-gray-400 mb-1">Quantity</label>
+                        <input type="number" id="pastaQuantity" min="1" value="1" required class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2.5 text-white text-center text-sm" style="height: 42px;">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-semibold text-gray-400 mb-1">Rate Your Ordering Experience</label>
+                    <select id="customerRating" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2.5 text-white text-sm">
+                        <option value="⭐⭐⭐⭐⭐ (5/5 Excellence)">⭐⭐⭐⭐⭐ - 5 Stars (Excellent)</option>
+                        <option value="⭐⭐⭐⭐ (4/5 Great)">⭐⭐⭐⭐ - 4 Stars (Great)</option>
+                        <option value="⭐⭐⭐ (3/5 Average)">⭐⭐⭐ - 3 Stars (Average)</option>
+                        <option value="⭐⭐ (2/5 Bad)">⭐⭐ - 2 Stars (Bad)</option>
+                        <option value="⭐ (1/5 Terrible)">⭐ - 1 Star (Terrible)</option>
+                    </select>
+                </div>
+
+                <div class="flex space-x-3">
+                    <div class="w-1/2">
+                        <label class="block text-xs uppercase tracking-wider font-semibold text-gray-400 mb-1">Service Type</label>
+                        <select id="serviceType" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2.5 text-white text-sm">
+                            <option value="Pickup">Store Pickup</option>
+                            <option value="Delivery">Home Delivery</option>
+                        </select>
+                    </div>
+                    <div class="w-1/2">
+                        <label class="block text-xs uppercase tracking-wider font-semibold text-gray-400 mb-1">Estimated Total</label>
+                        <div class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-amber-400 font-bold text-center text-sm flex items-center justify-center" style="height: 42px;">
+                            <span id="totalDisplay">28.000</span>&nbsp;DT
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-semibold text-gray-400 mb-1">Special Notes</label>
+                    <textarea id="specialNotes" rows="2" placeholder="e.g., Sans olives, extra pepperoni..." class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2.5 text-white focus:outline-none focus:border-amber-500 text-sm" style="resize: none;"></textarea>
+                </div>
+
+                <button type="submit" id="submitBtn" class="animated-btn w-full bg-amber-500 text-black font-bold py-3 rounded-lg shadow-md flex items-center justify-center gap-2 text-sm uppercase tracking-wider mt-2">
+                    <i class="fab fa-whatsapp"></i> Send Order via WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 5. BRANDING FOOTER -->
+    <footer class="py-12 text-center border-t border-zinc-800 bg-black mt-10">
+        <p class="text-gray-400 font-semibold text-xs tracking-wider uppercase mb-1">
+            Copyright belongs to Hama Digital
+        </p>
+        <p class="text-gray-600 text-[10px]">© 2026 Adesso Pasta Bardo. All rights reserved.</p>
+    </footer>
+
+    <!-- JAVASCRIPT APP CONFIGURATION -->
+    <script>
+        const restaurantWhatsApp = "216XXXXXXXX"; 
+
+        const menuPrices = {
+            "Casa Formaggi (Pizza)": 28.000,
+            "Campagnola (Pizza)": 25.000,
+            "Pizza Margherita": 18.500,
+            "Campagna Veggy (Pizza)": 23.000,
+            "Spaghetti Fruits de Mer": 24.000,
+            "Gnocchi Quatre Fromages": 21.000,
+            "Boga Cidre": 3.500,
+            "Coca Cola Classique": 3.500,
+            "Fanta Orange": 3.500,
+            "Apla Pomme": 3.500
+        };
+
+        const pastaSelect = document.getElementById('pastaSelect');
+        const quantityInput = document.getElementById('pastaQuantity');
+        const totalDisplay = document.getElementById('totalDisplay');
+
+        function calculateTotal() {
+            const selectedItem = pastaSelect.value;
+            const quantity = parseInt(quantityInput.value) || 1;
+            const pricePerItem = menuPrices[selectedItem] || 0;
+            const total = pricePerItem * quantity;
+            totalDisplay.textContent = total.toFixed(3);
+        }
+
+        pastaSelect.addEventListener('change', calculateTotal);
+        quantityInput.addEventListener('input', calculateTotal);
+
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('customerName').value;
+            const phone = document.getElementById('customerPhone').value;
+            const item = pastaSelect.value;
+            const qty = quantityInput.value;
+            const service = document.getElementById('serviceType').value;
+            const rating = document.getElementById('customerRating').value;
+            const notes = document.getElementById('specialNotes').value || "Aucune";
+            const finalTotal = totalDisplay.textContent;
+
+            const receiptText = 
+`🍝 *NEW ORDER - ADESSO PASTA* 🍝\n\n` +
+`👤 *Customer:* ${name}\n` +
+`📞 *Phone:* ${phone}\n\n` +
+`🛒 *Items Ordered:*\n` +
+`▪️ ${qty}x ${item}\n\n` +
+`⭐ *Experience Rating:* ${rating}\n\n` +
+`📦 *Type:* ${service}\n` +
+`📝 *Notes:* ${notes}\n\n` +
+`💰 *Total Amount:* ${finalTotal} DT`;
+
+            window.open(`https://wa.me/${restaurantWhatsApp}?text=${encodeURIComponent(receiptText)}`, '_blank');
+        });
+    </script>
+</body>
+</html>
